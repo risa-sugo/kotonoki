@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-score-top {
+  padding-top: 50px;
+	text-align: left;
+}
+.section-score-top h2 {
+  position: relative;
+  display: inline-block;
+	margin-left: 50px;
+}
+.section-score-top h2:before {
+  content: '';
+  position: absolute;
+  top: -90%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #E2D5C6;
+  left: -30px;
+  z-index: -1;
+}
+.section-score-top h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-image: url("../images/geta.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: -15px;
+  left: 160px;
+}
+.section-score-top ul {
+	margin: 50px auto 0;
+	display: flex;
+	justify-content: space-between;
+  max-width: 335px;
+	line-height: 76px;
+}
+.section-score-top ul li{
+	list-style: none;
+}
+.scorenav {
+	display: inline-block;
+    border-radius: 100%;
+    width: 77px;
+	  height: 77px;
+    text-align: center;
+    font-size: 1.6rem;
+	letter-spacing: -1px;
+	vertical-align: middle;
+/*	line-height: ;*/
+	border: solid .5px #888;
+}
+.scorenav.free-top {
+	background-color: #BCBCBC;
+}
+.scorenav.classic-top {
+	background-color: #E3DBB6;
+}
+.scorenav.jpop-top {
+	background-color: #DECAC5;
+}
+.scorenav.others-top {
+	background-color: #CBC9DE;
+		line-height: 20px;
+  padding: 15px;
+}
+.section-score_list h3 {
+  padding: 50px 0 20px;
+	position: relative;
+}
+.section-score_list {
+  margin: 0 20px;
+	position: relative;
+}
+.section-score_list_coment {
+	text-align: left;
+	display: inline-block;
+	margin: 0 auto;
+}
+/*
+@media(max-width:374px) {
+  .score-container-mini {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
+*/
+.freescore {
+	position: relative;
+}
+/*
+.title-free::before {
+	  content: '';
+  position: absolute;
+	background-image: url("../images/koma-1.png");
+  width: 40px;
+	height: 40px;
+	  background-size: contain;
+  background-repeat: no-repeat;
+	top: 40px;
+	left: 35%;
+	z-index: -1;
+}
+*/
+.title-classic {
+	
+}
+.title-jpop {
+	
+}
+.title-others {
+	
+}
+@media (min-width: 1040px) {
+  .section-score-top {
+    padding-top: 120px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 860px;
+  }
+  .section-score-top h2 {
+	margin-left: 0;
+  }
+	.section-score-top h2:before {
+    content: '';
+    position: absolute;
+    top: -200%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+	  border-radius:100%;
+    background-color: #E2D5C6;
+	  left: -40px;
+	  z-index:-1;
+}
+	.section-score-top h2::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-image: url("../images/geta.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: -25px;
+  left: 250px;
+}
+		.section-score-top ul {
+	margin: 80px 20px 30px;
+	display: flex;
+	justify-content: space-between;
+  max-width: 860px;
+	line-height: 120px;
+}
+	.scorenav {
+	display: inline-block;
+    border-radius: 100%;
+    width: 120px;
+	  height: 120px;
+    text-align: center;
+    font-size: 2.4rem;
+	letter-spacing: -1px;
+	vertical-align: middle;
+/*	line-height: ;*/
+	border: solid .5px #888;
+}
+	.scorenav.free-top {
+	background-color: transparent;
+}
+.scorenav.classic-top {
+	background-color: transparent;
+}
+.scorenav.jpop-top {
+	background-color: transparent;
+}
+	.scorenav.others-top {
+	background-color: transparent;
+		line-height: 30px;
+    padding: 24px;
+}
+	.scorenav.free-top:hover {
+	background-color: #BCBCBC;
+		opacity: 1;
+}
+.scorenav.classic-top:hover {
+	background-color: #E3DBB6;
+	opacity: 1;
+}
+.scorenav.jpop-top:hover{
+	background-color: #DECAC5;
+	opacity: 1;
+}
+.scorenav.others-top:hover {
+	background-color: #CBC9DE;
+		opacity: 1;
+}
+  .section-score_list_coment {
+    line-height: 35px;
+    text-align: left;
+    display: inline-block;
+    font-size: 2.0rem;
+    max-width: 860px;
+  }
+  .section-score_list h3 {
+    padding: 0 0 30px;
+  }
+	.section-score_list  {
+		padding: 80px 0 55px;
+	}
+}

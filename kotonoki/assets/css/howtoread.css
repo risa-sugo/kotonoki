@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-howtoread-top {
+  padding-top: 50px;
+  margin: 0 auto;
+  text-align: left;
+}
+.section-howtoread h2 {
+  position: relative;
+  display: inline-block;
+  margin-left: 50px;
+}
+.section-howtoread-top h2:before {
+  content: '';
+  position: absolute;
+  top: -90%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: #E2D5C6;
+  left: -30px;
+  z-index: -1;
+}
+.section-howtoread-top h2:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 45px;
+  background-size: contain;
+  background-image: url("../images/flower2.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: -10px;
+  left: 250px;
+}
+.section-howtoread-container {
+  text-align: left;
+  padding: 50px 0;
+}
+.section-howtoread-container h3 {
+  text-align: center;
+}
+.section-howtoread-container p {
+  padding: 0 25px;
+  max-width: 960px;
+}
+.section-howtoread-container.strings h3 {
+  margin-bottom: 30px;
+}
+.pc_br {
+  display: none;
+}
+.symbol_pdf {
+  color: #000AFF;
+}
+@media(min-width:1040px) {
+  .section-howtoread-top {
+    padding: 120px 0 0;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 860px;
+  }
+  .section-howtoread-container {
+    padding: 80px 0;
+    line-height: 40px;
+  }
+  .section-howtoread h2 {
+    margin-left: 0;
+  }
+  .section-howtoread-top h2:before {
+    content: '';
+    position: absolute;
+    top: -200%;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #E2D5C6;
+    left: -40px;
+    z-index: -1;
+  }
+  .section-howtoread-top h2:after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    background-image: url("../images/flower2.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: -15px;
+    left: 350px;
+  }
+  .section-howtoread-container.strings {
+    margin: 0 auto;
+    max-width: 860px;
+  }
+  .section-howtoread-container h3 {
+    text-align: left;
+  }
+  .section-howtoread-container p {
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 0
+  }
+  .pc_br {
+    display: inherit;
+  }
+}
+.section-howtoread-container.difference {
+  background-image: url("../images/bg.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 0;
+}
+.section-howtoread-container.difference h3 {
+  margin-bottom: 30px;
+}
+.format-top h3 span {
+  font-size: 1.6rem;
+}
+.middle_logo img {
+  height: 35px;
+}
+.middle_logo {
+  padding-top: 15px;
+  text-align: right;
+  margin-right: 20px;
+  margin-bottom: 0;
+  line-height: 0;
+}
+@media(min-width:1040px) {
+  .difference-detail {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .middle_logo img {
+    height: 55px;
+  }
+  .middle_logo {
+    margin-right: 80px;
+    padding-top: 25px;
+  }
+}
+.format-top p {
+  text-align: center;
+  margin-top: 10px;
+}
+.download img {
+  width: 25px;
+  height: 25px;
+}
+.format-container {
+  padding: 40px 25px 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.format-container ol {
+  list-style: none;
+}
+.format-container-mini {
+  display: flex;
+  padding-bottom: 15px;
+  vertical-align: text-top;
+  justify-content: space-around;
+}
+.format-container ol li {
+  border-bottom: 1px solid #4D4D4D;
+  margin-bottom: 15px;
+}
+.format-container ol li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+.section-howtoread-container.format {
+  padding-bottom: 0;
+}
+.bottom_logo img {
+  height: 40px;
+}
+.bottom_logo {
+  padding-top: 10px;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 0;
+  line-height: 0;
+}
+@media(min-width:1040px) {
+  .format-top {
+    max-width: 860px;
+    margin: auto;
+  }
+  .format-top p {
+    text-align: left;
+    font-size: 1.8rem;
+  }
+  .format-top h3 span {
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+  .format-container {
+    font-size: 2.4rem;
+    padding: 50px 0 0;
+  }
+  .bottom_logo img {
+    height: 70px;
+  }
+  .bottom_logo {
+    margin-left: 80px;
+    padding-top: 10px;
+  }
+  .section-howtoread-container.format {
+    padding-bottom: 0;
+  }
+}

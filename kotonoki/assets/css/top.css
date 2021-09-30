@@ -1,0 +1,405 @@
+@charset "UTF-8";
+/* CSS Document */
+.section-top-message {
+  height: 450px;
+  position: relative;
+  writing-mode: vertical-rl;
+  text-align: left;
+  margin: 0 auto;
+}
+.section-top_lead {
+  padding: 30px 0 0;
+  color: #76605F;
+  font-size: 3.0rem;
+  line-height: 50px;
+  letter-spacing: 10px;
+  font-weight: 400;
+}
+.section-top_lead-red {
+  padding-top: 70px;
+  color: #8F0C0C;
+  font-size: 3.0rem;
+  line-height: 50px;
+  letter-spacing: 10px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.eachTextAnime span {
+  opacity: 0;
+}
+.eachTextAnime.appeartext span {
+  animation: text_anime_on 1s ease-out forwards;
+}
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section-top_text {
+  color: #76605F;
+  padding: 120px 0 0;
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+  line-height: 40px;
+  letter-spacing: 8px;
+  font-family: "筑紫B丸ゴシック","UDDigiKyokasho R JIS2004", "Shimanami JIS2004",'ヒラギノ丸ゴ ProN W4', sans-serif;
+}
+.section-top_text span {
+  font-weight: 600;
+}
+.section-top img {
+  width: 140px;
+}
+.top-logo {
+  line-height: 0;
+}
+.section-top_lead::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  background-size: contain;
+  background-image: url("../images/musiclogo-3.png");
+  transform: rotate(-15deg);
+  background-repeat: no-repeat;
+  display: inline-block;
+  top: 20px;
+  left: 130px;
+}
+.section-top_text::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: #E2D5C6;
+  top: 50px;
+  left: -30px;
+  z-index: -1;
+  animation: fluidrotate 30s ease 0s infinite;
+}
+@keyframes fluidrotate {
+  0%, 100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
+}
+@media (min-width: 1040px) {
+  .section-top-container {
+    max-width: 860px;
+    margin: 0 auto;
+    max-height: 960px;
+  }
+  .section-top-message {
+    max-width: 860px;
+    height: 800px;
+  }
+  .section-top_text::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 425px;
+    height: 425px;
+    border-radius: 100%;
+    background-color: #E2D5C6;
+    top: 80px;
+    left: -170px;
+    z-index: -1;
+    animation: fluidrotate 30s ease 0s infinite;
+  }
+  .section-top_lead {
+    padding-top: 120px;
+    font-size: 4.6rem;
+    line-height: 100px;
+    letter-spacing: 20px;
+    font-weight: 400;
+  }
+  .section-top_lead-red {
+    padding: 180px 0 0 20px;
+    font-size: 4.6rem;
+    line-height: 100px;
+    letter-spacing: 20px;
+    font-weight: 400;
+  }
+  .section-top_text {
+    color: #76605F;
+    padding: 260px 60px 0 0;
+    display: inline-block;
+    position: relative;
+    font-size: 2.3rem;
+    line-height: 80px;
+    letter-spacing: 13px;
+  }
+  .section-top_text span {
+    font-weight: 600;
+  }
+  .section-top img {
+    width: 250px;
+    height: 140px;
+  }
+  .top-logo {
+    text-align: right;
+  }
+  .section-top_lead::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    background-size: contain;
+    background-image: url("../images/musiclogo-3.png");
+    transform: rotate(-15deg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    top: 70px;
+    left: 680px;
+  }
+}
+@keyframes huerotator {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+/*人気楽曲*/
+.section-popular {
+  padding: 30px 0 0;
+  background-image: url("../images/bg.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+.section-popular h3 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 90px;
+}
+.section-popular_coment {
+  font-size: 1.6rem;
+}
+.score-container-mini ul {
+  margin-bottom: 25px;
+}
+.section-popular h3:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/onpu.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-15deg);
+  left: 18%;
+  top: 20%;
+}
+.section-popular h3:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/onpu.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-15deg);
+  left: 75%;
+  top: 20%;
+}
+.popular-logo img {
+  height: 55px;
+}
+.popular-logo {
+  text-align: right;
+  margin-right: 20px;
+  line-height: 0;
+}
+.pc-only {
+  display: none;
+}
+@media (min-width: 1040px) {
+  .section-popular {
+    padding-top: 60px;
+  }
+  .section-popular_coment {
+    line-height: 35px;
+    text-align: center;
+    display: block;
+    font-size: 2.4rem;
+    max-width: 860px;
+    margin: auto;
+    padding-top: 20px;
+  }
+  .section-popular ul {
+    padding: 35px 0;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .popular-logo img {
+    height: 80px;
+  }
+  .popular-logo {
+    margin-right: 80px;
+  }
+  .pc-only {
+    display: inherit;
+  }
+}
+/*new-section*/
+.section-new {
+  padding: 30px 0 0;
+  font-size: 1.8rem;
+}
+.section-new h3 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 90px 0;
+}
+.section-new h3:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/onpu.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-15deg);
+  left: 18%;
+  top: 20%;
+}
+.section-new h3:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/onpu.svg");
+  background-repeat: no-repeat;
+  transform: rotate(-15deg);
+  left: 75%;
+  top: 20%;
+}
+.section-new ul {
+  list-style: none;
+  margin: 0 auto;
+}
+.section-new li {
+  display: flex;
+  flex-direction: column;
+}
+.new-score {
+  box-shadow: none;
+}
+/*楽曲一覧へのボタン*/
+.score_list_button {
+  font-size: 1.4rem;
+  padding: 15px 75px 15px 50px;
+  text-align: center;
+  position: relative;
+  background-color: #F7F7F7;
+  border: solid 1px #76605F;
+  display: inline-block;
+  margin: 30px 0 50px;
+}
+.score_list_button:hover {
+  outline: none;
+}
+.score_list_button::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/arrow.svg");
+  background-repeat: no-repeat;
+  top: 12px;
+}
+.bottom_logo img {
+  height: 45px;
+}
+.bottom_logo {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 0;
+  line-height: 0;
+}
+@media (min-width: 1040px) {
+  .score_list_button {
+    font-size: 2.0rem;
+    padding: 20px 80px 20px 65px;
+    text-align: center;
+    margin: 30px auto 50px;
+    position: relative;
+    background-color: #F7F7F7;
+  }
+  .score_list_button:hover {
+    outline: none;
+    background-color: #DDD9CF;
+  }
+  .score_list_button::after {
+    top: 18px;
+  }
+  .bottom_logo img {
+    height: 70px;
+  }
+  .bottom_logo {
+    margin-left: 80px;
+  }
+}
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 52%;
+  cursor: pointer; 
+  outline: none; 
+  border-top: 2px solid #666; /*矢印の色*/
+  border-right: 2px solid #666; /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+.slick-prev { /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+.slick-next { /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+@media (min-width: 1040px) {
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 45%;
+    cursor: pointer; 
+    outline: none;
+    border-top: 2px solid #666; 
+    border-right: 2px solid #666; 
+    height: 15px;
+    width: 15px;
+  }
+  .section-new {
+    padding-top: 60px;
+  }
+  .section-new ul {
+    padding: 50px 0 50px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
